@@ -22,7 +22,7 @@
   <body class="bg-beige">
     <section
       id="top"
-      class="h-[28rem] bg-image-header bg-cover bg-center bg-no-repeat px-6 text-white"
+      class="h-[28rem] bg-image-header bg-cover bg-center bg-no-repeat px-6 text-white md:bg-image-header-desktop"
     >
       <header class="relative flex items-center justify-between py-6">
         <a href="/">
@@ -56,6 +56,17 @@
             </nav>
           </div>
         </div>
+        <nav class="hidden md:flex md:items-center md:gap-6">
+          <a href="#" class="text-white hover:underline">About</a>
+          <a href="#" class="text-white hover:underline">Services</a>
+          <a href="#" class="text-white hover:underline">Projects</a>
+          <a
+            href="#"
+            class="rounded-full bg-white px-5 py-3 font-headings text-sm uppercase text-gray-darkest transition hover:bg-opacity-50 hover:text-white"
+          >
+            Contact
+          </a>
+        </nav>
       </header>
 
       <h1
@@ -68,15 +79,25 @@
       </a>
     </section>
 
-    <section id="transform">
-      <div class="aspect-square">
+    <section
+      id="transform"
+      class="flex flex-col md:flex-row-reverse md:items-center"
+    >
+      <div class="aspect-square md:w-1/2">
         <img
           src="./images/mobile/image-transform.jpg"
           alt="Transform your brand Image"
-          class="h-full w-full object-cover"
+          class="h-full w-full object-cover md:hidden"
+        />
+        <img
+          src="./images/desktop/image-transform.jpg"
+          alt="Transform your brand Image"
+          class="hidden h-full w-full object-cover md:block"
         />
       </div>
-      <div class="grid gap-6 px-6 py-10 text-center">
+      <div
+        class="flex flex-col items-center gap-6 px-6 py-10 md:w-1/2 md:items-start lg:px-36"
+      >
         <h2 class="text-3xl font-black text-gray-darkest">
           Transform your brand
         </h2>
@@ -87,7 +108,7 @@
         </p>
         <a
           href="#stand-out"
-          class="highlight highlight-yellow relative mx-auto inline-block w-32"
+          class="highlight highlight-yellow relative w-32 text-center"
         >
           <span
             class="relative font-headings text-sm font-black uppercase text-gray-darkest/95"
@@ -98,15 +119,22 @@
       </div>
     </section>
 
-    <section id="stand-out">
-      <div class="aspect-square">
+    <section id="stand-out" class="flex flex-col md:flex-row md:items-center">
+      <div class="aspect-square md:w-1/2">
         <img
           src="./images/mobile/image-stand-out.jpg"
           alt="Stand out to the right audience image"
-          class="h-full w-full object-cover"
+          class="h-full w-full object-cover md:hidden"
+        />
+        <img
+          src="./images/mobile/image-stand-out.jpg"
+          alt="Stand out to the right audience image"
+          class="hidden h-full w-full object-cover md:block"
         />
       </div>
-      <div class="grid gap-6 px-6 py-12 text-center">
+      <div
+        class="flex flex-col items-center gap-6 px-6 py-10 md:w-1/2 md:items-start lg:px-36"
+      >
         <h2 class="text-3xl font-black text-gray-darkest">
           Stand out to the right audience
         </h2>
@@ -117,7 +145,7 @@
         </p>
         <a
           href="#graphic-design"
-          class="highlight highlight-red relative mx-auto inline-block w-32"
+          class="highlight highlight-red relative w-32 text-center"
         >
           <span
             class="relative font-headings text-sm font-black uppercase text-gray-darkest/95"
@@ -128,35 +156,36 @@
       </div>
     </section>
 
-    <section
-      id="graphic-design"
-      class="grid gap-6 bg-image-graphic-design bg-cover bg-top bg-no-repeat px-6 pt-[90%] pb-12 text-center"
-    >
-      <h2 class="text-2xl font-black text-green">Graphic design</h2>
-      <p class="text-sm text-green">
-        Great design makes you memorable. We deliver artwork that underscores
-        your brand message and captures potential clients’ attention.
-      </p>
-    </section>
+    <div class="md:grid md:grid-cols-2">
+      <section
+        id="graphic-design"
+        class="flex flex-col gap-6 bg-image-graphic-design bg-cover bg-top bg-no-repeat px-6 pt-[90%] pb-12 text-center md:bg-image-graphic-design-desktop md:px-36 md:pt-[55%]"
+      >
+        <h2 class="text-2xl font-black text-green">Graphic design</h2>
+        <p class="text-sm text-green">
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential clients’ attention.
+        </p>
+      </section>
+      <section
+        id="photography"
+        class="flex flex-col gap-6 bg-image-photography bg-cover bg-top bg-no-repeat px-6 pt-[90%] pb-12 text-center md:bg-image-photography-desktop md:px-36 md:pt-[55%]"
+      >
+        <h2 class="text-2xl font-black text-blue">Photography</h2>
+        <p class="text-sm text-blue">
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </section>
+    </div>
 
-    <section
-      id="photography"
-      class="grid gap-6 bg-image-photography bg-cover bg-top bg-no-repeat px-6 pt-[90%] pb-12 text-center"
-    >
-      <h2 class="text-2xl font-black text-blue">Photography</h2>
-      <p class="text-sm text-blue">
-        Increase your credibility by getting the most stunning, high-quality
-        photos that improve your business image.
-      </p>
-    </section>
-
-    <section id="testimonials" class="px-6 py-12">
+    <section id="testimonials" class="px-6 py-12 md:px-36 md:py-32">
       <h2
         class="text-center text-sm uppercase tracking-widest text-gray-darkest/50"
       >
         Client testimonials
       </h2>
-      <div class="mt-12 grid gap-6">
+      <div class="mt-12 grid gap-6 md:grid-cols-3 md:gap-8">
         <figure class="flex flex-col items-center gap-6">
           <img
             src="./images/image-emily.jpg"
@@ -209,7 +238,7 @@
       </div>
     </section>
 
-    <section id="gallery" class="grid grid-cols-2">
+    <section class="grid grid-cols-2 md:hidden">
       <img
         src="./images/mobile/image-gallery-milkbottles.jpg"
         alt="Milk Bottles"
@@ -218,6 +247,18 @@
       <img src="./images/mobile/image-gallery-cone.jpg" alt="Cone" />
       <img
         src="./images/mobile/image-gallery-sugar-cubes.jpg"
+        alt="Sugar Cubes"
+      />
+    </section>
+    <section class="hidden md:grid md:grid-cols-4">
+      <img
+        src="./images/desktop/image-gallery-milkbottles.jpg"
+        alt="Milk Bottles"
+      />
+      <img src="./images/desktop/image-gallery-orange.jpg" alt="Orange" />
+      <img src="./images/desktop/image-gallery-cone.jpg" alt="Cone" />
+      <img
+        src="./images/desktop/image-gallery-sugar-cubes.jpg"
         alt="Sugar Cubes"
       />
     </section>

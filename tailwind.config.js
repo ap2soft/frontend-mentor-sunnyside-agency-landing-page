@@ -10,9 +10,14 @@ module.exports = {
     extend: {
       backgroundImage: {
         "image-header": "url('../images/mobile/image-header.jpg')",
+        "image-header-desktop": "url('../images/desktop/image-header.jpg')",
         "image-graphic-design":
           "url('../images/mobile/image-graphic-design.jpg')",
+        "image-graphic-design-desktop":
+          "url('../images/desktop/image-graphic-design.jpg')",
         "image-photography": "url('../images/mobile/image-photography.jpg')",
+        "image-photography-desktop":
+          "url('../images/desktop/image-photography.jpg')",
       },
       colors: {
         beige: "hsl(26, 100%, 99%)",
