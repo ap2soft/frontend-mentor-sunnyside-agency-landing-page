@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-using-tailwind-css-and-alpinejs-HqWjX__jC6](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-using-tailwind-css-and-alpinejs-HqWjX__jC6)
 - Live Site URL: [https://ap2soft-sunnyside-agency-landing-page.netlify.app/](https://ap2soft-sunnyside-agency-landing-page.netlify.app/)
 
 ## My process
