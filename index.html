@@ -41,6 +41,7 @@
           <div
             x-show="open"
             x-transition
+            @click.outside="open = false"
             class="absolute inset-x-0 top-16 before:ml-auto before:block before:h-0 before:w-0 before:translate-x-4 before:translate-y-4 before:rotate-45 before:border-b-[36px] before:border-r-[36px] before:border-b-white before:border-r-transparent"
           >
             <nav class="flex flex-col items-center bg-white py-6 shadow-md">
