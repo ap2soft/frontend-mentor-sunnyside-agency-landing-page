@@ -1,0 +1,21 @@
+{
+  "name": "sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "description": "Sunnyside agency landing page",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+    "build": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify"
+  },
+  "keywords": [
+    "frontendmentor",
+    "sunnyside",
+    "agency",
+    "landing",
+    "page"
+  ],
+  "author": "Andrew P.",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
