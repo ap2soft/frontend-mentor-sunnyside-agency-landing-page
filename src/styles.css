@@ -1,3 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-content;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  h7 {
+    @apply font-headings;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .highlight {
+    @apply before:content-[''];
+    @apply before:absolute before:inset-x-0 before:bottom-0;
+    @apply before:h-2;
+    @apply before:rounded-full;
+  }
+
+  .highlight-yellow {
+    @apply before:transition-colors;
+    @apply before:bg-yellow/30;
+    @apply hover:before:bg-yellow;
+  }
+
+  .highlight-red {
+    @apply before:transition-colors;
+    @apply before:bg-red/30;
+    @apply hover:before:bg-red;
+  }
+}
